@@ -18,16 +18,53 @@
     font-size: $size;
 }
 
+/*HEADER INICIO*/
 
+.container{
+    padding-top: 200px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.white-text{
+    @include fuentes(Posterama1927W01-Black, #fff, 40px)
+}
+
+.intro-2 {
+    background: url("../Multimedia/wood-fired-oven-1960099_1280.jpg")no-repeat center center;
+    background-size: cover;
+}
 
 .navbar {
-    background: rgba (0,0,0,0) !important;
-    a {
-        color: #fff;
-        text-transform: uppercase !important;
-        font-family: Posterama1927W01-Black; 
+    background-color: transparent;
+    height: 100px;
+
+    a{
+        @include fuentes(Posterama1927W01-Black, #fff, 17px);
     }
 }
+
+.top-nav-collapse {
+    background-color: #1f2e5e;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #1f2e5e;
+    }
+}
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+
+/*HEADER FIN*/
+
+
 
 
 /* NOSOTROS */
@@ -60,7 +97,7 @@
     line-height: 76px;
 }
 
-.container{
+.containerFooter{
     display: flex;
     margin: 0 auto;
     max-width: 1140px;
@@ -115,7 +152,7 @@
 
     }
 
-    .container{
+    .containerFooter{
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -234,7 +271,7 @@
 
     }
 
-    .container{
+    .containerFooter{
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -337,7 +374,7 @@
 
     }
 
-    .container{
+    .containerFooter{
         display: flex;
         flex-direction: column;
         margin-left: auto;
@@ -443,7 +480,7 @@
 
     }
 
-    .container{
+    .containerFooter{
         display: flex;
         flex-direction: column;
         margin-left: auto;
