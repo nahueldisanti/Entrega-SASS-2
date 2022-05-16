@@ -23,7 +23,7 @@
 .navbar {
     background-color: #1f2e5e !important;
     background-image: url(Multimedia/Imagenes/tramita.png) !important;
-
+    
     a {
         color: #fff;
         text-transform: uppercase !important;
@@ -493,6 +493,7 @@
 
         li{
             @include fuentes(Posterama1927W01-Black, #fff, 20px);
+
             font-weight: 500;
             line-height: 43px;
             text-decoration: none;
