@@ -69,6 +69,7 @@ header,
   border-radius: 0px;
   margin-bottom: 0;
   font-size: 15px;
+  margin-top: 30px;
 }
 
 .jumbotron p {
@@ -112,9 +113,37 @@ header,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 20px;
 }
 
 /* Media Querys*/
+/*CONTACTO*/
+.mb-4 {
+  padding-left: 50px;
+}
+
+.mb-4 h2 {
+  font-family: Posterama1927W01-Black;
+  color: #1f2e5e;
+  font-size: 50px;
+}
+
+.mb-4 p {
+  font-family: Posterama1927W01-Black;
+  color: #1f2e5e;
+  font-size: 20px;
+}
+
+.btn {
+  font-family: Posterama1927W01-Black;
+  color: #1f2e5e;
+  font-size: 10px;
+}
+
+.btn-primary {
+  background-color: #1f2e5e !important;
+}
+
 /* Vista PC INDEX */
 @media only screen and (min-width: 1280px) {
   /* INDEX */
@@ -234,9 +263,25 @@ header,
   .fa-brands fa-whatsapp {
     text-align: center;
   }
-  /* NOSOTROS */
   /* MENU */
+  .contenedorMenu {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    display: flexbox;
+  }
+  .contenedorTitulosMenu h2 {
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 50px;
+  }
+  .contenedorTitulosMenu p {
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 20px;
+  }
   /*UBICACION */
+  /* NOSOTROS */
   /* CONTACTO*/
 }
 
