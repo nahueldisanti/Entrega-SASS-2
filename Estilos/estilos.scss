@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-
+//Fuentes Inicio
 @import url(//db.onlinewebfonts.com/c/4a633a8efda614b0de398f042be3a396?family=Posterama1927W01-Black);
 
 @font-face {
@@ -10,15 +10,31 @@
     src: url("//db.onlinewebfonts.com/t/4a633a8efda614b0de398f042be3a396.eot");
     src: url("//db.onlinewebfonts.com/t/4a633a8efda614b0de398f042be3a396.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4a633a8efda614b0de398f042be3a396.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4a633a8efda614b0de398f042be3a396.woff") format("woff"), url("//db.onlinewebfonts.com/t/4a633a8efda614b0de398f042be3a396.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4a633a8efda614b0de398f042be3a396.svg#Posterama1927W01-Black") format("svg");
 }
+//Fuenste fin
 
-
-@mixin fuentes($font, $color, $size) {
+@mixin fuentes($font, $color, $size) {          //Aqui esta el mixin instaurado
     font-family: $font;
     color: $color;
     font-size: $size;
 }
 
 /*HEADER INICIO*/
+
+$foto-header: (
+    /*Declaracion del mapa*/
+    2: url(/Multimedia/wood-fired-oven-1960099_1280.jpg)no-repeat center center,
+    1: url(/Multimedia/pizzeria-interior.jpg)no-repeat center center
+);
+
+
+//Bucle
+
+@each $number, $imagen in $foto-header {
+    .intro-#{$number} {
+        background: $imagen;
+        background-size: cover;
+    }
+}
 
 .container{
     padding-top: 200px;
@@ -32,10 +48,6 @@
     @include fuentes(Posterama1927W01-Black, #fff, 40px)
 }
 
-.intro-2 {
-    background: url("../Multimedia/wood-fired-oven-1960099_1280.jpg")no-repeat center center;
-    background-size: cover;
-}
 
 .navbar {
     background-color: transparent;
@@ -63,7 +75,21 @@ header,
 
 /*HEADER FIN*/
 
+//INDEX INICIO//
 
+.carousel-inner {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 300px;
+}
+
+.imagenes-carousel {
+    
+}
+
+
+
+//INDEX FIN
 
 
 /* NOSOTROS */
@@ -91,10 +117,16 @@ header,
 /* UBICACION */
 
 .textos__nosotros{
-    @include fuentes(Posterama1927W01-Black, #1f2e5e, 40px);
-    font-feature-settings: "ss04" 1,"ss06" 1,"ss08" 1,"ss09" 1;
+    @include fuentes(Posterama1927W01-Black, #1f2e5e, 25px);
+    text-align: center;
+    font-feature-settings: "ss04" 0,"ss06" 1,"ss08" 1,"ss09" 1;
     font-weight: 500;
     line-height: 76px;
+}
+
+.titulo2{
+    @extend .textos__nosotros;                                                          //Aqui agregue un @extend.
+    @include fuentes(Posterama1927W01-Black, #1f2e5e, 35px)                           //Aqui agregue un @ mixin
 }
 
 .containerFooter{
@@ -120,7 +152,7 @@ header,
     padding-left:50px;
 
     h2{
-        @include fuentes(Posterama1927W01-Black, #1f2e5e, 50px);
+        @include fuentes(Posterama1927W01-Black, #1f2e5e, 200px);
     }
 
     p{

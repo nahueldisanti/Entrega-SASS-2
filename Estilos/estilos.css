@@ -11,6 +11,16 @@
 }
 
 /*HEADER INICIO*/
+.intro-2 {
+  background: url(/Multimedia/wood-fired-oven-1960099_1280.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.intro-1 {
+  background: url(/Multimedia/pizzeria-interior.jpg) no-repeat center center;
+  background-size: cover;
+}
+
 .container {
   padding-top: 200px;
 }
@@ -23,11 +33,6 @@
   font-family: Posterama1927W01-Black;
   color: #fff;
   font-size: 40px;
-}
-
-.intro-2 {
-  background: url("../Multimedia/wood-fired-oven-1960099_1280.jpg") no-repeat center center;
-  background-size: cover;
 }
 
 .navbar {
@@ -59,6 +64,12 @@ header,
 }
 
 /*HEADER FIN*/
+.carousel-inner {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 300px;
+}
+
 /* NOSOTROS */
 .jumbotron {
   background-image: url("../Multimedia/Imagenes/pizza 1.jpg");
@@ -82,14 +93,21 @@ header,
 }
 
 /* UBICACION */
-.textos__nosotros {
+.textos__nosotros, .titulo2 {
   font-family: Posterama1927W01-Black;
   color: #1f2e5e;
-  font-size: 40px;
-  -webkit-font-feature-settings: "ss04" 1,"ss06" 1,"ss08" 1,"ss09" 1;
-          font-feature-settings: "ss04" 1,"ss06" 1,"ss08" 1,"ss09" 1;
+  font-size: 25px;
+  text-align: center;
+  -webkit-font-feature-settings: "ss04" 0,"ss06" 1,"ss08" 1,"ss09" 1;
+          font-feature-settings: "ss04" 0,"ss06" 1,"ss08" 1,"ss09" 1;
   font-weight: 500;
   line-height: 76px;
+}
+
+.titulo2 {
+  font-family: Posterama1927W01-Black;
+  color: #1f2e5e;
+  font-size: 35px;
 }
 
 .containerFooter {
@@ -125,7 +143,7 @@ header,
 .mb-4 h2 {
   font-family: Posterama1927W01-Black;
   color: #1f2e5e;
-  font-size: 50px;
+  font-size: 200px;
 }
 
 .mb-4 p {
