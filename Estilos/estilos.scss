@@ -26,7 +26,6 @@ $foto-header: (
     1: url(/Multimedia/pizzeria-interior.jpg)no-repeat center center
 );
 
-
 //Bucle
 
 @each $number, $imagen in $foto-header {
@@ -84,11 +83,8 @@ header,
 }
 
 .imagenes-carousel {
-    
+
 }
-
-
-
 //INDEX FIN
 
 
@@ -104,6 +100,8 @@ header,
     margin-bottom: 0;
     font-size: 15px;
     margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 
     p{
         height: 10px;
@@ -152,7 +150,7 @@ header,
     padding-left:50px;
 
     h2{
-        @include fuentes(Posterama1927W01-Black, #1f2e5e, 200px);
+        @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
     }
 
     p{
@@ -310,6 +308,75 @@ header,
 
     /*UBICACION */
     /* NOSOTROS */
+
+    .Foto-Texto{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-right: 30px;
+
+        h2{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
+            padding-bottom: 15px;
+        }
+
+        p{
+            text-align:center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+
+        }
+    }
+
+    .Foto-Texto-Reverse{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 30px;
+
+        h2{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
+            padding-bottom: 15px;
+        }
+
+        p{
+            text-align:center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+        }
+    }
+
+    .textoIzq{
+        width: 50%;
+        padding: 40px;
+        margin: 100px 0 0 0;
+        line-height: 1.6;
+    }
+
+    .textoDer{
+        width: 50%;
+        padding: 40px;
+        margin: 100px 0 0 0;
+        line-height: 1.6;
+    }
+
+
+    .ImagenDer{
+        width: 50%;
+        height: 500px;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+
+    .ImagenIzq{
+        width: 50%;
+        height: 500px;
+        background-size: cover;
+        box-sizing: border-box;
+
+    }
     /* CONTACTO*/
 
 }
@@ -424,6 +491,11 @@ header,
     }
 
     /* NOSOTROS */
+    .Foto-Texto{
+        display: flex;
+        flex-direction: row;
+    }
+
     /* MENU */
     /*UBICACION */
     /* CONTACTO*/

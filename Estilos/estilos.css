@@ -81,6 +81,8 @@ header,
   margin-bottom: 0;
   font-size: 15px;
   margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .jumbotron p {
@@ -143,7 +145,7 @@ header,
 .mb-4 h2 {
   font-family: Posterama1927W01-Black;
   color: #1f2e5e;
-  font-size: 200px;
+  font-size: 30px;
 }
 
 .mb-4 p {
@@ -300,6 +302,82 @@ header,
   }
   /*UBICACION */
   /* NOSOTROS */
+  .Foto-Texto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+  .Foto-Texto h2 {
+    text-align: center;
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+  .Foto-Texto p {
+    text-align: center;
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 20px;
+  }
+  .Foto-Texto-Reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .Foto-Texto-Reverse h2 {
+    text-align: center;
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+  .Foto-Texto-Reverse p {
+    text-align: center;
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 20px;
+  }
+  .textoIzq {
+    width: 50%;
+    padding: 40px;
+    margin: 100px 0 0 0;
+    line-height: 1.6;
+  }
+  .textoDer {
+    width: 50%;
+    padding: 40px;
+    margin: 100px 0 0 0;
+    line-height: 1.6;
+  }
+  .ImagenDer {
+    width: 50%;
+    height: 500px;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .ImagenIzq {
+    width: 50%;
+    height: 500px;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
   /* CONTACTO*/
 }
 
@@ -414,6 +492,15 @@ header,
             animation-iteration-count: infinite;
   }
   /* NOSOTROS */
+  .Foto-Texto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   /* MENU */
   /*UBICACION */
   /* CONTACTO*/
