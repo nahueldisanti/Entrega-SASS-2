@@ -1,0 +1,5 @@
+Ideas para la pagina
+
+*UBICACION
+Colocar el mapa a la izquierda y del lado derecho la direccion en texto y 
+transportes publicos como llegar. 

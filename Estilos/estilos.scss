@@ -491,9 +491,72 @@ header,
     }
 
     /* NOSOTROS */
+
     .Foto-Texto{
         display: flex;
         flex-direction: row;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-right: 30px;
+
+        h2{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
+            padding-bottom: 15px;
+        }
+
+        p{
+            text-align:center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+
+        }
+    }
+
+    .Foto-Texto-Reverse{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 30px;
+
+        h2{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
+            padding-bottom: 15px;
+        }
+
+        p{
+            text-align:center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+        }
+    }
+
+    .textoIzq{
+        width: 50%;
+        margin: 100px 0 0 0;
+        line-height: 1.6;
+    }
+
+    .textoDer{
+        width: 50%;
+        margin: 100px 0 0 0;
+        line-height: 1.6;
+    }
+
+
+    .ImagenDer{
+        width: 50%;
+        height: 500px;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+
+    .ImagenIzq{
+        width: 50%;
+        height: 500px;
+        background-size: cover;
+        box-sizing: border-box;
+
     }
 
     /* MENU */
@@ -600,6 +663,75 @@ header,
     }
 
     /* NOSOTROS */
+
+    .Foto-Texto{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-right: 30px;
+        margin-left: 30px;
+
+        h2{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 40px);
+            padding-bottom: 15px;
+        }
+
+        p{
+            text-align:center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+
+        }
+    }
+
+    .Foto-Texto-Reverse{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+
+        h2{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 40px);
+            padding-bottom: 15px;
+        }
+
+        p{
+            text-align:center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+        }
+    }
+
+    .textoIzq{
+        // width: 50%;
+        margin: 50px 0 0 0;
+        line-height: 1.6;
+    }
+
+    .textoDer{
+        // width: 50%;
+        margin: 50px 0 0 0;
+        line-height: 1.6;
+    }
+
+
+    .ImagenDer{
+        // width: 50%; //
+        height: 500px;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+
+    .ImagenIzq{
+        // width: 50%;
+        height: 500px;
+        background-size: cover;
+        box-sizing: border-box;
+
+    }
     /* MENU */
     /*UBICACION */
     /* CONTACTO*/
@@ -716,10 +848,78 @@ header,
     
 
     /* NOSOTROS */
+
+    .Foto-Texto{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-right: 30px;
+        margin-left: 30px;
+
+        h2{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 40px);
+            padding-bottom: 15px;
+        }
+
+        p{
+            text-align:center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+
+        }
+    }
+
+    .Foto-Texto-Reverse{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+
+        h2{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 40px);
+            padding-bottom: 15px;
+        }
+
+        p{
+            text-align:center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+        }
+    }
+
+    .textoIzq{
+        // width: 50%;
+        margin: 50px 0 0 0;
+        line-height: 1.6;
+    }
+
+    .textoDer{
+        // width: 50%;
+        margin: 50px 0 0 0;
+        line-height: 1.6;
+    }
+
+
+    .ImagenDer{
+        // width: 50%; //
+        height: 500px;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+
+    .ImagenIzq{
+        // width: 50%;
+        height: 500px;
+        background-size: cover;
+        box-sizing: border-box;
+
+    }
     /* MENU */
     /*UBICACION */
     /* CONTACTO*/
- 
 }
 
 @keyframes aparecer{
