@@ -54,6 +54,10 @@
   .navbar {
     background-color: #1f2e5e;
   }
+  .nav-item {
+    background-color: #1f2e5e;
+    opacity: 60%;
+  }
 }
 
 html,
@@ -95,14 +99,11 @@ header,
 }
 
 /*CONTACTO*/
-.mb-4 {
-  padding-left: 50px;
-}
-
 .mb-4 h2 {
   font-family: Posterama1927W01-Black;
-  color: #1f2e5e;
+  color: #fff;
   font-size: 30px;
+  background-color: #1f2e5e;
 }
 
 .mb-4 p {

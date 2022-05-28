@@ -64,6 +64,11 @@ $foto-header: (
     .navbar {
         background-color: #1f2e5e;
     }
+
+    .nav-item {
+        background-color: #1f2e5e;
+        opacity: 60%;
+    }
 }
 html,
 body,
@@ -108,45 +113,15 @@ header,
         font-family: Posterama1927W01-Black;
     }
 }
-// /* UBICACION */
-
-// .textos__nosotros{
-//     @include fuentes(Posterama1927W01-Black, #1f2e5e, 25px);
-//     text-align: center;
-//     font-feature-settings: "ss04" 0,"ss06" 1,"ss08" 1,"ss09" 1;
-//     font-weight: 500;
-//     line-height: 76px;
-// }
-
-// .titulo2{
-//     @extend .textos__nosotros;                                                          //Aqui agregue un @extend.
-//     @include fuentes(Posterama1927W01-Black, #1f2e5e, 35px)                           //Aqui agregue un @ mixin
-// }
-
-// .containerFooter{
-//     display: flex;
-//     margin: 0 auto;
-//     max-width: 1140px;
-//     width: 85vw;
-//     justify-content: center;
-// }
-
-// .mapa{
-//     right: 80px;
-//     bottom: 40px;
-//     display: flex;
-//     padding-bottom: 20px;
-// }
-
-
 
 /*CONTACTO*/
 
 .mb-4{
-    padding-left:50px;
+
 
     h2{
-        @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
+        @include fuentes(Posterama1927W01-Black, #fff, 30px);
+        background-color: #1f2e5e;
     }
 
     p{
@@ -426,7 +401,6 @@ header,
 
     }
     /* CONTACTO*/
-
 }
 
 @media only screen and (min-width: 801px) and (max-width:1279px) {
