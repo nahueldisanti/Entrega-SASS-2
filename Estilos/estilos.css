@@ -68,19 +68,13 @@ header,
 }
 
 /*HEADER FIN*/
-.carousel-inner {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  height: 300px;
-}
-
-/* NOSOTROS */
+/*INDEX INICIO*/
 .jumbotron {
-  background-image: url("../Multimedia/Imagenes/pizza 1.jpg");
+  background-image: url("../Multimedia/Imagenes/pizza-g3286f0967_1920.jpg");
   background-size: cover;
   position: center;
-  height: 600px;
-  color: black;
+  height: 400px;
+  color: #fff;
   border-radius: 0px;
   margin-bottom: 0;
   font-size: 15px;
@@ -113,8 +107,10 @@ header,
 }
 
 .btn {
+  background-color: #1f2e5e !important;
+  color: #fff !important;
   font-family: Posterama1927W01-Black;
-  color: #1f2e5e;
+  color: #fff;
   font-size: 10px;
 }
 
@@ -124,27 +120,11 @@ header,
 
 /* Vista PC INDEX */
 @media only screen and (min-width: 1280px) {
-  /* INDEX */
-  .gridContainer {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (auto)[6];
-        grid-template-columns: repeat(6, auto);
-    -ms-grid-rows: (auto)[3];
-        grid-template-rows: repeat(3, auto);
-  }
-  /* Header */
-  /* FOTO */
-  section {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-column: 1 / 7;
-  }
   /* Footer */
   footer {
     font-family: Posterama1927W01-Black;
     color: white;
-    font-size: 50px;
+    font-size: 30px;
     width: 100%;
     height: 500px;
     background-color: #1f2e5e;
@@ -242,25 +222,144 @@ header,
     text-align: center;
   }
   /* INDEX */
-  .gridContainer {
+  .conteinerBienvenides {
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 56px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .contenedorGaleria {
+    height: 600px;
+    width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[6];
-        grid-template-columns: repeat(6, auto);
-    -ms-grid-rows: (auto)[3];
-        grid-template-rows: repeat(3, auto);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 15px;
+    grid-gap: 15px;
+    margin-bottom: 60px;
+  }
+  .imgGaleria {
+    border-radius: 8px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .imgGaleria:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .imgGaleria1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    background-image: url(/Multimedia/Galeria/FotoCarrousel2.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    background-color: red;
+    background-image: url(/Multimedia/Galeria/foto4.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    background-color: blue;
+    background-image: url(/Multimedia/Galeria/FotoCarrousel3.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria4 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    background-color: yellow;
+    background-image: url(/Multimedia/Galeria/masa.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria5 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    background-color: violet;
+    background-image: url(/Multimedia/Galeria/pizza-g8eaeda790_1920.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria6 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+    background-color: gray;
+    background-image: url(/Multimedia/Galeria/FotoCarrousel1.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria7 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    background-color: green;
+    background-image: url(/Multimedia/Galeria/FotoCarrousel4.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria8 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+    background-color: pink;
+    background-image: url(/Multimedia/Galeria/pizza8.jpg);
+    background-size: cover;
+    background-position: center;
   }
   /* MENU */
   .contenedorMenu {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 70px;
-    display: flexbox;
   }
   .contenedorTitulosMenu h2 {
+    background-color: #1f2e5e;
     font-family: Posterama1927W01-Black;
-    color: #1f2e5e;
-    font-size: 50px;
+    color: #fff;
+    font-size: 25px;
   }
   .contenedorTitulosMenu p {
     font-family: Posterama1927W01-Black;
@@ -282,7 +381,7 @@ header,
   .titulo2 {
     font-family: Posterama1927W01-Black;
     color: #fff;
-    font-size: 35px;
+    font-size: 50px;
     background-color: #1f2e5e;
   }
   .mapa {
@@ -364,14 +463,16 @@ header,
   .textoIzq {
     width: 50%;
     padding: 40px;
-    margin: 100px 0 0 0;
+    margin: 50px 40px 50px 0;
     line-height: 1.6;
+    background-color: beige;
   }
   .textoDer {
     width: 50%;
     padding: 40px;
-    margin: 50px 0 0 0;
+    margin: 50px 40px 50px 40px;
     line-height: 1.6;
+    background-color: beige;
   }
   .ImagenDer {
     width: 50%;
@@ -391,16 +492,6 @@ header,
 }
 
 @media only screen and (min-width: 801px) and (max-width: 1279px) {
-  /*INDEX*/
-  .gridContainer {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (auto)[6];
-        grid-template-columns: repeat(6, auto);
-    -ms-grid-rows: (auto)[3];
-        grid-template-rows: repeat(3, auto);
-  }
-  /* Header */
   /* Footer */
   footer {
     font-family: Posterama1927W01-Black;
@@ -500,6 +591,124 @@ header,
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
   }
+  /* INDEX*/
+  .contenedorGaleria {
+    height: 600px;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 15px;
+    grid-gap: 15px;
+    margin-bottom: 60px;
+  }
+  .imgGaleria {
+    border-radius: 8px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .imgGaleria:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .imgGaleria1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    background-image: url(/Multimedia/Galeria/FotoCarrousel2.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    background-color: red;
+    background-image: url(/Multimedia/Galeria/foto4.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    background-color: blue;
+    background-image: url(/Multimedia/Galeria/FotoCarrousel3.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria4 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    background-color: yellow;
+    background-image: url(/Multimedia/Galeria/masa.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria5 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    background-color: violet;
+    background-image: url(/Multimedia/Galeria/pizza-g8eaeda790_1920.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria6 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+    background-color: gray;
+    background-image: url(/Multimedia/Galeria/FotoCarrousel1.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria7 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    background-color: green;
+    background-image: url(/Multimedia/Galeria/FotoCarrousel4.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria8 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+    background-color: pink;
+    background-image: url(/Multimedia/Galeria/pizza8.jpg);
+    background-size: cover;
+    background-position: center;
+  }
   /* NOSOTROS */
   .Foto-Texto {
     display: -webkit-box;
@@ -590,6 +799,23 @@ header,
             box-sizing: border-box;
   }
   /* MENU */
+  .contenedorMenu {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    display: flexbox;
+  }
+  .contenedorTitulosMenu h2 {
+    background-color: #1f2e5e;
+    font-family: Posterama1927W01-Black;
+    color: #fff;
+    font-size: 25px;
+  }
+  .contenedorTitulosMenu p {
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 20px;
+  }
   /*UBICACION */
   .textos__nosotros, .titulo2 {
     font-family: Posterama1927W01-Black;
@@ -624,7 +850,6 @@ header,
             box-sizing: border-box;
     padding-left: 30px;
   }
-  /* CONTACTO*/
 }
 
 /*Tablet y celulares grandes*/
@@ -738,6 +963,72 @@ header,
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
   }
+  /*INDEX*/
+  .contenedorGaleria {
+    min-height: 600px;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 15px;
+    grid-gap: 15px;
+    margin-bottom: 60px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .imgGaleria {
+    border-radius: 8px;
+    height: 300px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .imgGaleria:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .imgGaleria1 {
+    background-image: url(/Multimedia/Galeria/FotoCarrousel2.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria2 {
+    background-image: url(/Multimedia/Galeria/foto4.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria3 {
+    background-image: url(/Multimedia/Galeria/FotoCarrousel3.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria4 {
+    background-image: url(/Multimedia/Galeria/masa.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria5 {
+    background-image: url(/Multimedia/Galeria/pizza-g8eaeda790_1920.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria6 {
+    background-image: url(/Multimedia/Galeria/FotoCarrousel1.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria7 {
+    background-image: url(/Multimedia/Galeria/FotoCarrousel4.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria8 {
+    background-image: url(/Multimedia/Galeria/pizza8.jpg);
+    background-size: cover;
+    background-position: center;
+  }
   /* NOSOTROS */
   .Foto-Texto {
     display: -webkit-box;
@@ -840,6 +1131,23 @@ header,
             box-sizing: border-box;
   }
   /* MENU */
+  .contenedorMenu {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    display: flexbox;
+  }
+  .contenedorTitulosMenu h2 {
+    background-color: #1f2e5e;
+    font-family: Posterama1927W01-Black;
+    color: #fff;
+    font-size: 25px;
+  }
+  .contenedorTitulosMenu p {
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 20px;
+  }
   /*UBICACION */
   .textos__nosotros, .titulo2 {
     font-family: Posterama1927W01-Black;
@@ -1003,6 +1311,70 @@ header,
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
   }
+  /*INDEX*/
+  .contenedorGaleria {
+    min-height: 600px;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 15px;
+    grid-gap: 15px;
+    margin-bottom: 60px;
+  }
+  .imgGaleria {
+    border-radius: 8px;
+    height: 180px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .imgGaleria:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .imgGaleria1 {
+    background-image: url(/Multimedia/Galeria/FotoCarrousel2.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria2 {
+    background-image: url(/Multimedia/Galeria/foto4.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria3 {
+    background-image: url(/Multimedia/Galeria/FotoCarrousel3.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria4 {
+    background-image: url(/Multimedia/Galeria/masa.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria5 {
+    background-image: url(/Multimedia/Galeria/pizza-g8eaeda790_1920.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria6 {
+    background-image: url(/Multimedia/Galeria/FotoCarrousel1.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria7 {
+    background-image: url(/Multimedia/Galeria/FotoCarrousel4.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .imgGaleria8 {
+    background-image: url(/Multimedia/Galeria/pizza8.jpg);
+    background-size: cover;
+    background-position: center;
+  }
   /* NOSOTROS */
   .Foto-Texto {
     display: -webkit-box;
@@ -1105,6 +1477,25 @@ header,
             box-sizing: border-box;
   }
   /* MENU */
+  .contenedorMenu {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contenedorTitulosMenu h2 {
+    background-color: #1f2e5e;
+    font-family: Posterama1927W01-Black;
+    color: #fff;
+    font-size: 25px;
+  }
+  .contenedorTitulosMenu p {
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 20px;
+  }
   /*UBICACION */
   .textos__nosotros, .titulo2 {
     font-family: Posterama1927W01-Black;
