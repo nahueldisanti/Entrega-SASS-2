@@ -10,7 +10,7 @@
     src: url("//db.onlinewebfonts.com/t/4a633a8efda614b0de398f042be3a396.eot");
     src: url("//db.onlinewebfonts.com/t/4a633a8efda614b0de398f042be3a396.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4a633a8efda614b0de398f042be3a396.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4a633a8efda614b0de398f042be3a396.woff") format("woff"), url("//db.onlinewebfonts.com/t/4a633a8efda614b0de398f042be3a396.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4a633a8efda614b0de398f042be3a396.svg#Posterama1927W01-Black") format("svg");
 }
-//Fuenste fin
+//Fuentes fin
 
 @mixin fuentes($font, $color, $size) {          //Aqui esta el mixin instaurado
     font-family: $font;
@@ -105,6 +105,23 @@ header,
     }
 }
 
+.jumbotron-menu{
+    @extend .jumbotron;
+    background-image: url("../Multimedia/Imagenes/vegana.jpg");
+
+    p{  
+        height: 10px;
+        color:#1f2e5e;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    h1 {
+        padding: 20px;
+        color:#1f2e5e;
+    }
+}
+
 //INDEX FIN//
 
 /*CONTACTO*/
@@ -132,6 +149,19 @@ header,
 .btn-primary{
     background-color: #1f2e5e !important;
 }
+
+
+
+/*MENU*/
+
+.botonesMenu{
+    text-align: center;
+}
+
+/* MEDIA QUERYS */ 
+
+
+
 
 /* Vista PC INDEX */
 
@@ -238,12 +268,15 @@ header,
     /* INDEX */
 
     .conteinerBienvenides{
-        @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+        @include fuentes(Posterama1927W01-Black, white, 20px);
         text-align: center;
         font-weight: 500;
         line-height: 56px;
         margin-top: 100px;
         margin-bottom: 100px;
+        background-color: #1f2e5e;
+        padding-bottom: 10px;
+        padding-top: 10px;
 
     }
 
@@ -344,7 +377,7 @@ header,
     .contenedorMenu{
         text-align: center;
         margin-top: 50px;
-        margin-bottom: 70px;
+        margin-bottom: 30px;
     }
     .contenedorTitulosMenu h2{
         background-color: #1f2e5e;
@@ -353,6 +386,110 @@ header,
 
     .contenedorTitulosMenu p{
         @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+    }
+
+
+    .Foto-Texto-Menu{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 100px;
+        margin-top: 100px;
+        margin-right: 100px;
+        margin-left: 100px;
+        justify-content: center;
+
+        h2{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
+            padding-bottom: 15px;
+        }
+
+        p{
+            text-align:center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+
+        }
+
+        h3{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+        }
+
+        ul li {
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+
+        }
+    }
+
+    .Foto-Texto-Reverse-Menu{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+        justify-content: center;
+
+        h2{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
+            padding-bottom: 15px;
+        }
+
+        p{
+            text-align:center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+        }
+
+        h3{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+        }
+
+        ul li {
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+
+        }
+    }
+
+    .textoIzqMenu{
+        width: 35%;
+        height: 700px;
+        padding: 40px;
+        margin: 0px 40px 0px 0;
+        line-height: 1.6;
+        background-color: beige;
+    }
+
+    .textoDerMenu{
+        width: 35%;
+        padding: 40px;
+        height: 700px;
+        margin: 0px 0px 40px 40px;
+        line-height: 1.6;
+        background-color: beige;
+
+    }
+
+    .ImagenDerMenu{
+        width: 35%;
+        height: 700px;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+
+    .ImagenIzqMenu{
+        width: 35%;
+        height: 700px;
+        background-size: cover;
+        box-sizing: border-box;
+
     }
 
     /*UBICACION */
@@ -370,7 +507,7 @@ header,
     
     .titulo2{
         @extend .textos__nosotros;                                                          //Aqui agregue un @extend.
-        @include fuentes(Posterama1927W01-Black, #fff, 50px);                            //Aqui agregue un @ mixin
+        @include fuentes(Posterama1927W01-Black, #fff, 30px);                            //Aqui agregue un @ mixin
         background-color: #1f2e5e;
     }
     
@@ -434,6 +571,19 @@ header,
         p{
             text-align:center;
             @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+        }
+
+        h3{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+        }
+
+        ul li {
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+
         }
     }
 
@@ -1399,8 +1549,8 @@ header,
     .contenedorMenu{
         text-align: center;
         margin-top: 50px;
-        margin-bottom: 70px;
-        display: flex;
+        margin-bottom: 30px;
+        // display: flex;
     }
     .contenedorTitulosMenu h2{
         background-color: #1f2e5e;
