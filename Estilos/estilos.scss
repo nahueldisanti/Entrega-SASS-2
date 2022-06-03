@@ -89,11 +89,11 @@ header,
     height: 400px;
     color: #fff ;
     border-radius: 0px;
-    margin-bottom: 0;
     font-size: 15px;
     margin-top: 30px;
     margin-left: 30px;
     margin-right: 30px;
+    margin-bottom: 50px;
 
     p{
         height: 10px;
@@ -401,7 +401,7 @@ header,
         h2{
             text-align: center;
             @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
-            padding-bottom: 15px;
+            padding-bottom: 50px;
         }
 
         p{
@@ -417,10 +417,9 @@ header,
         }
 
         ul li {
-            text-align: center;
+            text-align: justify;
             @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
             padding-bottom: 15px;
-
         }
     }
 
@@ -436,7 +435,8 @@ header,
         h2{
             text-align: center;
             @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
-            padding-bottom: 15px;
+            padding-bottom: 50px;
+
         }
 
         p{
@@ -451,7 +451,7 @@ header,
         }
 
         ul li {
-            text-align: center;
+            text-align: justify;
             @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
             padding-bottom: 15px;
 
@@ -460,7 +460,7 @@ header,
 
     .textoIzqMenu{
         width: 35%;
-        height: 700px;
+        height: 720px;
         padding: 40px;
         margin: 0px 40px 0px 0;
         line-height: 1.6;
@@ -479,7 +479,7 @@ header,
 
     .ImagenDerMenu{
         width: 35%;
-        height: 700px;
+        height: 720px;
         background-size: cover;
         box-sizing: border-box;
     }
@@ -720,6 +720,19 @@ header,
 
     /* INDEX*/ 
 
+    .conteinerBienvenides{
+        @include fuentes(Posterama1927W01-Black, white, 20px);
+        text-align: center;
+        font-weight: 500;
+        line-height: 56px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        background-color: #1f2e5e;
+        padding-bottom: 10px;
+        padding-top: 10px;
+
+    }
+
     .contenedorGaleria {
         height: 600px;
         width: 100%;
@@ -812,6 +825,245 @@ header,
         background-position: center;
     }
     
+        /* MENU */
+
+    .contenedorMenu{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .contenedorTitulosMenu h2{
+        background-color: #1f2e5e;
+        @include fuentes(Posterama1927W01-Black, #fff, 25px);
+    }
+
+    .contenedorTitulosMenu p{
+        @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+    }
+
+
+    .Foto-Texto-Menu{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 100px;
+        margin-top: 100px;
+        margin-right: 100px;
+        margin-left: 100px;
+        justify-content: center;
+
+        h2{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
+            padding-bottom: 15px;
+        }
+
+        p{
+            text-align:center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+
+        }
+
+        h3{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+        }
+
+        ul li {
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+
+        }
+    }
+
+    .Foto-Texto-Reverse-Menu{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+        justify-content: center;
+
+        h2{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
+            padding-bottom: 15px;
+        }
+
+        p{
+            text-align:center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+        }
+
+        h3{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+        }
+
+        ul li {
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+
+        }
+    }
+
+    .textoIzqMenu{
+        width: 35%;
+        height: 700px;
+        padding: 40px;
+        margin: 0px 40px 0px 0;
+        line-height: 1.6;
+        background-color: beige;
+    }
+
+    .textoDerMenu{
+        width: 35%;
+        padding: 40px;
+        height: 700px;
+        margin: 0px 0px 40px 40px;
+        line-height: 1.6;
+        background-color: beige;
+
+    }
+
+    .ImagenDerMenu{
+        width: 35%;
+        height: 700px;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+
+    .ImagenIzqMenu{
+        width: 35%;
+        height: 700px;
+        background-size: cover;
+        box-sizing: border-box;
+
+    }
+
+        /* MENU */
+
+        .contenedorMenu{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        .contenedorTitulosMenu h2{
+            background-color: #1f2e5e;
+            @include fuentes(Posterama1927W01-Black, #fff, 25px);
+        }
+    
+        .contenedorTitulosMenu p{
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+        }
+    
+    
+        .Foto-Texto-Menu{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 100px;
+            margin-top: 100px;
+            margin-right: 100px;
+            margin-left: 100px;
+            justify-content: center;
+    
+            h2{
+                text-align: center;
+                @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
+                padding-bottom: 15px;
+            }
+    
+            p{
+                text-align:center;
+                @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+    
+            }
+    
+            h3{
+                text-align: center;
+                @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+                padding-bottom: 15px;
+            }
+    
+            ul li {
+                text-align: center;
+                @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+                padding-bottom: 15px;
+    
+            }
+        }
+    
+        .Foto-Texto-Reverse-Menu{
+            display: flex;
+            flex-direction: row-reverse;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            margin-left: 100px;
+            margin-right: 100px;
+            justify-content: center;
+    
+            h2{
+                text-align: center;
+                @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
+                padding-bottom: 15px;
+            }
+    
+            p{
+                text-align:center;
+                @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            }
+    
+            h3{
+                text-align: center;
+                @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+                padding-bottom: 15px;
+            }
+    
+            ul li {
+                text-align: center;
+                @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+                padding-bottom: 15px;
+    
+            }
+        }
+    
+        .textoIzqMenu{
+            width: 35%;
+            height: 700px;
+            padding: 40px;
+            margin: 0px 40px 0px 0;
+            line-height: 1.6;
+            background-color: beige;
+        }
+    
+        .textoDerMenu{
+            width: 35%;
+            padding: 40px;
+            height: 700px;
+            margin: 0px 0px 40px 40px;
+            line-height: 1.6;
+            background-color: beige;
+    
+        }
+    
+        .ImagenDerMenu{
+            width: 35%;
+            height: 700px;
+            background-size: cover;
+            box-sizing: border-box;
+        }
+    
+        .ImagenIzqMenu{
+            width: 35%;
+            height: 700px;
+            background-size: cover;
+            box-sizing: border-box;
+    
+        }
 
     /* NOSOTROS */
 
@@ -871,12 +1123,14 @@ header,
         width: 50%;
         margin: 100px 0 0 0;
         line-height: 1.6;
+        background-color: beige;
     }
 
     .textoDer{
         width: 50%;
         margin: 100px 0 0 0;
         line-height: 1.6;
+        background-color: beige;
     }
 
 
@@ -1045,6 +1299,19 @@ header,
 
     /*INDEX*/
 
+    .conteinerBienvenides{
+        @include fuentes(Posterama1927W01-Black, white, 20px);
+        text-align: center;
+        font-weight: 500;
+        line-height: 56px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        background-color: #1f2e5e;
+        padding-bottom: 10px;
+        padding-top: 10px;
+
+    }
+
     .contenedorGaleria {
         min-height: 600px;
         width: 100%;
@@ -1192,12 +1459,14 @@ header,
         // width: 50%;
         margin: 50px 0 0 0;
         line-height: 1.6;
+        background-color: beige;
     }
 
     .textoDer{
         // width: 50%;
         margin: 50px 0 0 0;
         line-height: 1.6;
+        background-color: beige;
     }
 
 
@@ -1230,6 +1499,103 @@ header,
 
     .contenedorTitulosMenu p{
         @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+    }
+
+    .Foto-Texto-Menu{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-right: 30px;
+        margin-left: 30px;
+
+        h2{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 40px);
+            padding-bottom: 15px;
+        }
+
+        p{
+            text-align:center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+
+        }
+
+        h3{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+        }
+
+        ul li {
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+
+        }
+    }
+
+    .Foto-Texto-Reverse-Menu{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+
+        h2{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 40px);
+            padding-bottom: 15px;
+        }
+
+        p{
+            text-align:center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+        }
+
+        h3{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+        }
+
+        ul li {
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+
+        }
+    }   
+
+
+    .textoIzqMenu{
+        // width: 50%;
+        margin: 50px 0 0 0;
+        line-height: 1.6;
+        background-color: beige;
+    }
+
+    .textoDerMenu{
+        // width: 50%;
+        margin: 50px 0 0 0;
+        line-height: 1.6;
+        background-color: beige;
+    }
+
+
+    .ImagenDerMenu{
+        // width: 50%; //
+        height: 500px;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+
+    .ImagenIzqMenu{
+        // width: 50%;
+        height: 500px;
+        background-size: cover;
+        box-sizing: border-box;
     }
 
     /*UBICACION */
@@ -1338,7 +1704,7 @@ header,
 
             a{
                 color: white;
-                font-size: 20px;
+                font-size: 30px;
             }
         }
     }
@@ -1374,6 +1740,19 @@ header,
     }
 
     /*INDEX*/
+
+    .conteinerBienvenides{
+        @include fuentes(Posterama1927W01-Black, white, 15px);
+        text-align: center;
+        font-weight: 500;
+        line-height: 56px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        background-color: #1f2e5e;
+        padding-bottom: 10px;
+        padding-top: 10px;
+
+    }
 
     .contenedorGaleria {
         min-height: 600px;
@@ -1521,12 +1900,14 @@ header,
         // width: 50%;
         margin: 50px 0 0 0;
         line-height: 1.6;
+        background-color: beige;
     }
 
     .textoDer{
         // width: 50%;
         margin: 50px 0 0 0;
         line-height: 1.6;
+        background-color: beige;
     }
 
 

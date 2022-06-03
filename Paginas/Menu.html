@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Integracion Bootstrap -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    <!-- Integracion Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <!-- Integracion AOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -17,6 +17,8 @@
     <!-- Links de estilos -->
     <link rel="stylesheet" href="../Estilos/estilos.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>NUESTRAS DELICIAS</title>
     <!-- Inicio Links MDB -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
@@ -88,7 +90,7 @@
   <!-- FIN HEADER -->
 
 <!-- Titutlo del menu -->
-<div class="contenedorMenu">
+<div class="contenedorMenu" data-aos="zoom-in-down">
   <div class="contenedorTitulosMenu">
     <h2>NUESTRA CARTA</h2>
   </div>
@@ -97,9 +99,9 @@
   </div>
 </div>
 <!-- Botones cartas -->
-<div class="botonesMenu">
-  <button type="button" class="btn">EMPANADAS</button>
-  <button type="button" class="btn">PIZZITA</button>
+<div class="botonesMenu" data-aos="zoom-in-down">
+  <a href="#empanadas" type="button" class="btn">EMPANADAS</a>
+  <a href="#pizzas" type="button" class="btn">PIZZITA</a>
 </div>
 
 <!-- Jumbotron opciones veganos -->
@@ -110,22 +112,43 @@
 </div>
 
 <!-- Carta de empanadas -->
-<section class="Foto-Texto-Menu">
+<section id="empanadas" class="Foto-Texto-Menu" data-aos="flip-right">
   <div class="textoIzqMenu">
     <h2>Empanadas</h2>
     <ul>
-      <li></li>
+      <li>Carne a Cuchillo</li>
+      <li>Carne Picante</li>
+      <li>Carne Vegan <i class='fas fa-leaf'></i></li>
+      <li>Pollo</li>
+      <li>Jamón y Queso</li>
+      <li>Queso y Cebolla <i class='fas fa-leaf'></i></li>
+      <li>Roque y Jamón</li>
+      <li>Hongos <i class='fas fa-leaf'></i></li>
+    </ul>
+    <h2>Clásicos Porteños</h2>
+    <ul>
+      <li>Fainá <i class='fas fa-leaf'></i></li>
+      <li>Zeta Rellena</li>
     </ul>
   </div>
     <img src="../Multimedia/Galeria/index.jpg" class="ImagenDerMenu"> 
 
 </section>
 <!-- Carta de pizzas -->
-<section class="Foto-Texto-Reverse-Menu">
+<section id="pizzas" class="Foto-Texto-Reverse-Menu" data-aos="flip-left">
   <div class="textoDerMenu">
     <h2>Pizzita</h2>
     <ul>
-      <li></li>
+      <li>Muzzarella <i class='fas fa-leaf'></i></li>
+      <li>Napolitana <i class='fas fa-leaf'></i></li>
+      <li>Margaritha <i class='fas fa-leaf'></i></li>
+      <li>Jamón y Queso</li>
+      <li>Fugazzeta <i class='fas fa-leaf'></i></li>
+      <li>Pepperoni</li>
+      <li>Provolone y Jamón</li>
+      <li>Muzzarella y Pesto de Rúcula <i class='fas fa-leaf'></i></li>
+      <li>Queso Azul, Cherrys, y Cebolla Dulce</li>
+      <li>Hongos, Queso y Perejil<i class='fas fa-leaf'></i></li>
     </ul>
   </div>
     <img src="../Multimedia/Galeria/FotoCarrousel2.jpeg" class="ImagenIzqMenu">
