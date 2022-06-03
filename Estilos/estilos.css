@@ -50,13 +50,13 @@
   background-color: #1f2e5e;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 990px) {
   .navbar {
     background-color: #1f2e5e;
   }
   .nav-item {
     background-color: #1f2e5e;
-    opacity: 60%;
+    opacity: 80%;
   }
 }
 
@@ -139,31 +139,6 @@ header,
   text-align: center;
 }
 
-/* UBICACION CAROUSEL*/
-.carousel {
-  max-height: 700px;
-  margin: 50px;
-  background-color: white;
-}
-
-.carousel-item {
-  max-height: 700px;
-  padding: 0 550px 0 550px;
-}
-
-.d-block {
-  max-height: 700px;
-  min-height: 700px;
-}
-
-.carousel-control-prev-icon {
-  color: black;
-}
-
-.carousel-control-next-icon {
-  color: black;
-}
-
 /* MEDIA QUERYS */
 /* Vista PC INDEX */
 @media only screen and (min-width: 1280px) {
@@ -244,7 +219,7 @@ header,
   .whatsapp {
     height: 50px;
     width: 50px;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 40px;
     background-color: #fff;
     color: #1f2e5e;
@@ -558,6 +533,27 @@ header,
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding-left: 30px;
+  }
+  /* Carousel*/
+  .carousel {
+    max-height: 700px;
+    margin: 50px;
+    background-color: white;
+  }
+  .carousel-item {
+    max-height: 700px;
+    padding: 0 550px 0 550px;
+    display: felx;
+  }
+  .d-block {
+    max-height: 700px;
+    min-height: 700px;
+  }
+  .carousel-control-prev-icon {
+    color: black;
+  }
+  .carousel-control-next-icon {
+    color: black;
   }
   /* NOSOTROS */
   .Foto-Texto {
@@ -1159,6 +1155,26 @@ header,
             box-sizing: border-box;
     padding-left: 30px;
   }
+  /* Carousel*/
+  .carousel {
+    max-height: 700px;
+    margin: 50px;
+    background-color: white;
+  }
+  .carousel-item {
+    max-height: 700px;
+    display: felx;
+  }
+  .d-block {
+    max-height: 700px;
+    min-height: 700px;
+  }
+  .carousel-control-prev-icon {
+    color: black;
+  }
+  .carousel-control-next-icon {
+    color: black;
+  }
 }
 
 /*Tablet y celulares grandes*/
@@ -1622,6 +1638,26 @@ header,
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  /* Carousel*/
+  .carousel {
+    max-height: 700px;
+    margin: 50px;
+    background-color: white;
+  }
+  .carousel-item {
+    max-height: 700px;
+    display: felx;
+  }
+  .d-block {
+    max-height: 700px;
+    min-height: 700px;
+  }
+  .carousel-control-prev-icon {
+    color: black;
+  }
+  .carousel-control-next-icon {
+    color: black;
   }
   /* CONTACTO*/
 }
@@ -2098,6 +2134,26 @@ header,
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  /* Carousel*/
+  .carousel {
+    max-height: 700px;
+    margin: 50px;
+    background-color: white;
+  }
+  .carousel-item {
+    max-height: 700px;
+    display: felx;
+  }
+  .d-block {
+    max-height: 700px;
+    min-height: 700px;
+  }
+  .carousel-control-prev-icon {
+    color: black;
+  }
+  .carousel-control-next-icon {
+    color: black;
   }
   /* CONTACTO*/
 }

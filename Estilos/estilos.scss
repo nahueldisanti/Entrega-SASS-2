@@ -61,16 +61,17 @@ $foto-header: (
     background-color: #1f2e5e;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 990px) {
     .navbar {
         background-color: #1f2e5e;
     }
 
     .nav-item {
         background-color: #1f2e5e;
-        opacity: 60%;
+        opacity: 80%;
     }
 }
+
 html,
 body,
 header,
@@ -160,37 +161,6 @@ header,
 }
 
 
-/* UBICACION CAROUSEL*/
-
-.carousel {
-    max-height: 700px;
-    margin: 50px;
-    background-color: white;
-    
-}
-
-.carousel-item{
-
-    max-height: 700px;
-    // background-size: cover;
-    padding: 0 550px 0 550px;
-}
-
-.d-block{
-    max-height: 700px;
-    min-height: 700px;
-}
-
-.carousel-control-prev-icon{
-    color: black;
-}
-
-.carousel-control-next-icon{
-    color: black;
-}
-
-
-
 
 
 
@@ -278,7 +248,7 @@ header,
     .whatsapp{
         height: 50px;
         width: 50px;
-        font-size: 45px;
+        font-size: 40px;
         line-height: 40px;
         background-color: #fff;
         color: #1f2e5e;
@@ -552,6 +522,36 @@ header,
         padding-bottom: 20px;
         box-sizing: border-box;
         padding-left: 30px;
+    }
+
+
+    /* Carousel*/
+    .carousel {
+        max-height: 700px;
+        margin: 50px;
+        background-color: white;
+        
+    }
+    
+    .carousel-item{
+    
+        max-height: 700px;
+        // background-size: cover;
+        padding: 0 550px 0 550px;
+        display: felx;
+    }
+    
+    .d-block{
+        max-height: 700px;
+        min-height: 700px;
+    }
+    
+    .carousel-control-prev-icon{
+        color: black;
+    }
+    
+    .carousel-control-next-icon{
+        color: black;
     }
     /* NOSOTROS */
 
@@ -1096,6 +1096,31 @@ header,
         padding-left: 30px;
     }
 
+    /* Carousel*/
+    .carousel {
+        max-height: 700px;
+        margin: 50px;
+        background-color: white;
+        
+    }
+    .carousel-item{
+    
+        max-height: 700px;
+        display: felx;
+    }
+    
+    .d-block{
+        max-height: 700px;
+        min-height: 700px;
+    }
+    
+    .carousel-control-prev-icon{
+        color: black;
+    }
+    
+    .carousel-control-next-icon{
+        color: black;
+    }
 }
 
 
@@ -1528,6 +1553,32 @@ header,
         padding-bottom: 20px;
         box-sizing: border-box;
         justify-content: center;
+    }
+
+    /* Carousel*/
+    .carousel {
+        max-height: 700px;
+        margin: 50px;
+        background-color: white;
+        
+    }
+    .carousel-item{
+    
+        max-height: 700px;
+        display: felx;
+    }
+    
+    .d-block{
+        max-height: 700px;
+        min-height: 700px;
+    }
+    
+    .carousel-control-prev-icon{
+        color: black;
+    }
+    
+    .carousel-control-next-icon{
+        color: black;
     }
     /* CONTACTO*/
 }
@@ -1975,6 +2026,31 @@ header,
         justify-content: center;
     }
 
+    /* Carousel*/
+    .carousel {
+        max-height: 700px;
+        margin: 50px;
+        background-color: white;
+        
+    }
+    .carousel-item{
+    
+        max-height: 700px;
+        display: felx;
+    }
+    
+    .d-block{
+        max-height: 700px;
+        min-height: 700px;
+    }
+    
+    .carousel-control-prev-icon{
+        color: black;
+    }
+    
+    .carousel-control-next-icon{
+        color: black;
+    }
     /* CONTACTO*/
 }
 
