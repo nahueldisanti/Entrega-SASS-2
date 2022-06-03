@@ -26,6 +26,7 @@ $foto-header: (
     1: url(/Multimedia/pizzeria-interior.jpg)no-repeat center center
 );
 
+
 //Bucle
 
 @each $number, $imagen in $foto-header {
@@ -158,9 +159,42 @@ header,
     text-align: center;
 }
 
+
+/* UBICACION CAROUSEL*/
+
+.carousel {
+    max-height: 700px;
+    margin: 50px;
+    background-color: white;
+    
+}
+
+.carousel-item{
+
+    max-height: 700px;
+    // background-size: cover;
+    padding: 0 550px 0 550px;
+}
+
+.d-block{
+    max-height: 700px;
+    min-height: 700px;
+}
+
+.carousel-control-prev-icon{
+    color: black;
+}
+
+.carousel-control-next-icon{
+    color: black;
+}
+
+
+
+
+
+
 /* MEDIA QUERYS */ 
-
-
 
 
 /* Vista PC INDEX */
@@ -376,7 +410,7 @@ header,
 
     .contenedorMenu{
         text-align: center;
-        margin-top: 50px;
+        // margin-top: 50px;
         margin-bottom: 30px;
     }
     .contenedorTitulosMenu h2{
@@ -853,7 +887,7 @@ header,
 
         h2{
             text-align: center;
-            @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 25px);
             padding-bottom: 15px;
         }
 
@@ -870,8 +904,8 @@ header,
         }
 
         ul li {
-            text-align: center;
-            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            text-align: justify;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 17px);
             padding-bottom: 15px;
 
         }
@@ -904,8 +938,8 @@ header,
         }
 
         ul li {
-            text-align: center;
-            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            text-align: justify;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 17px);
             padding-bottom: 15px;
 
         }
@@ -945,125 +979,7 @@ header,
 
     }
 
-        /* MENU */
 
-        .contenedorMenu{
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 30px;
-        }
-        .contenedorTitulosMenu h2{
-            background-color: #1f2e5e;
-            @include fuentes(Posterama1927W01-Black, #fff, 25px);
-        }
-    
-        .contenedorTitulosMenu p{
-            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
-        }
-    
-    
-        .Foto-Texto-Menu{
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 100px;
-            margin-top: 100px;
-            margin-right: 100px;
-            margin-left: 100px;
-            justify-content: center;
-    
-            h2{
-                text-align: center;
-                @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
-                padding-bottom: 15px;
-            }
-    
-            p{
-                text-align:center;
-                @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
-    
-            }
-    
-            h3{
-                text-align: center;
-                @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
-                padding-bottom: 15px;
-            }
-    
-            ul li {
-                text-align: center;
-                @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
-                padding-bottom: 15px;
-    
-            }
-        }
-    
-        .Foto-Texto-Reverse-Menu{
-            display: flex;
-            flex-direction: row-reverse;
-            margin-bottom: 30px;
-            margin-top: 30px;
-            margin-left: 100px;
-            margin-right: 100px;
-            justify-content: center;
-    
-            h2{
-                text-align: center;
-                @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
-                padding-bottom: 15px;
-            }
-    
-            p{
-                text-align:center;
-                @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
-            }
-    
-            h3{
-                text-align: center;
-                @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
-                padding-bottom: 15px;
-            }
-    
-            ul li {
-                text-align: center;
-                @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
-                padding-bottom: 15px;
-    
-            }
-        }
-    
-        .textoIzqMenu{
-            width: 35%;
-            height: 700px;
-            padding: 40px;
-            margin: 0px 40px 0px 0;
-            line-height: 1.6;
-            background-color: beige;
-        }
-    
-        .textoDerMenu{
-            width: 35%;
-            padding: 40px;
-            height: 700px;
-            margin: 0px 0px 40px 40px;
-            line-height: 1.6;
-            background-color: beige;
-    
-        }
-    
-        .ImagenDerMenu{
-            width: 35%;
-            height: 700px;
-            background-size: cover;
-            box-sizing: border-box;
-        }
-    
-        .ImagenIzqMenu{
-            width: 35%;
-            height: 700px;
-            background-size: cover;
-            box-sizing: border-box;
-    
-        }
 
     /* NOSOTROS */
 
@@ -1148,24 +1064,6 @@ header,
         box-sizing: border-box;
 
     }
-
-    /* MENU */
-
-    .contenedorMenu{
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 70px;
-        display: flexbox;
-    }
-    .contenedorTitulosMenu h2{
-        background-color: #1f2e5e;
-        @include fuentes(Posterama1927W01-Black, #fff, 25px);
-    }
-
-    .contenedorTitulosMenu p{
-        @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
-    }
-
 
     /*UBICACION */
     .textos__nosotros{
@@ -1508,10 +1406,11 @@ header,
         margin-top: 30px;
         margin-right: 30px;
         margin-left: 30px;
+        align-items: center;
 
         h2{
             text-align: center;
-            @include fuentes(Posterama1927W01-Black, #1f2e5e, 40px);
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
             padding-bottom: 15px;
         }
 
@@ -1530,7 +1429,7 @@ header,
         ul li {
             text-align: center;
             @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
-            padding-bottom: 15px;
+            padding-bottom: 10px;
 
         }
     }
@@ -1542,10 +1441,11 @@ header,
         margin-top: 30px;
         margin-left: 30px;
         margin-right: 30px;
+        align-items: center;
 
         h2{
             text-align: center;
-            @include fuentes(Posterama1927W01-Black, #1f2e5e, 40px);
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 30px);
             padding-bottom: 15px;
         }
 
@@ -1570,29 +1470,30 @@ header,
 
 
     .textoIzqMenu{
-        // width: 50%;
-        margin: 50px 0 0 0;
+        width: 50%;
+        margin: 50px 0 50px 0;
         line-height: 1.6;
         background-color: beige;
     }
 
     .textoDerMenu{
-        // width: 50%;
-        margin: 50px 0 0 0;
+        width: 50%;
+        margin: 50px 0 50px 0;
         line-height: 1.6;
         background-color: beige;
     }
 
 
     .ImagenDerMenu{
-        // width: 50%; //
+        width: 50%;
         height: 500px;
         background-size: cover;
         box-sizing: border-box;
+        justify-content:right;
     }
 
     .ImagenIzqMenu{
-        // width: 50%;
+        width: 50%;
         height: 500px;
         background-size: cover;
         box-sizing: border-box;
@@ -1930,8 +1831,8 @@ header,
     .contenedorMenu{
         text-align: center;
         margin-top: 50px;
-        margin-bottom: 30px;
-        // display: flex;
+        margin-bottom: 70px;
+        display: flexbox;
     }
     .contenedorTitulosMenu h2{
         background-color: #1f2e5e;
@@ -1940,6 +1841,106 @@ header,
 
     .contenedorTitulosMenu p{
         @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+    }
+
+    .Foto-Texto-Menu{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-right: 30px;
+        margin-left: 30px;
+        align-items: center;
+
+        h2{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+        }
+
+        p{
+            text-align:center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+
+        }
+
+        h3{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+        }
+
+        ul li {
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 15px);
+            padding-bottom: 10px;
+
+        }
+    }
+
+    .Foto-Texto-Reverse-Menu{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        align-items: center;
+
+        h2{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+        }
+
+        p{
+            text-align:center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+        }
+
+        h3{
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 15px);
+            padding-bottom: 15px;
+        }
+
+        ul li {
+            text-align: center;
+            @include fuentes(Posterama1927W01-Black, #1f2e5e, 20px);
+            padding-bottom: 15px;
+
+        }
+    }   
+
+
+    .textoIzqMenu{
+        width: 70%;
+        margin: 50px 0 50px 0;
+        line-height: 1.6;
+        background-color: beige;
+    }
+
+    .textoDerMenu{
+        width: 70%;
+        margin: 50px 0 50px 0;
+        line-height: 1.6;
+        background-color: beige;
+    }
+
+
+    .ImagenDerMenu{
+        width: 70%;
+        height: 500px;
+        background-size: cover;
+        box-sizing: border-box;
+        justify-content:right;
+    }
+
+    .ImagenIzqMenu{
+        width: 70%;
+        height: 500px;
+        background-size: cover;
+        box-sizing: border-box;
     }
 
 

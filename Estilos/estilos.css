@@ -139,6 +139,31 @@ header,
   text-align: center;
 }
 
+/* UBICACION CAROUSEL*/
+.carousel {
+  max-height: 700px;
+  margin: 50px;
+  background-color: white;
+}
+
+.carousel-item {
+  max-height: 700px;
+  padding: 0 550px 0 550px;
+}
+
+.d-block {
+  max-height: 700px;
+  min-height: 700px;
+}
+
+.carousel-control-prev-icon {
+  color: black;
+}
+
+.carousel-control-next-icon {
+  color: black;
+}
+
 /* MEDIA QUERYS */
 /* Vista PC INDEX */
 @media only screen and (min-width: 1280px) {
@@ -377,7 +402,6 @@ header,
   /* MENU */
   .contenedorMenu {
     text-align: center;
-    margin-top: 50px;
     margin-bottom: 30px;
   }
   .contenedorTitulosMenu h2 {
@@ -914,140 +938,7 @@ header,
     text-align: center;
     font-family: Posterama1927W01-Black;
     color: #1f2e5e;
-    font-size: 30px;
-    padding-bottom: 15px;
-  }
-  .Foto-Texto-Menu p {
-    text-align: center;
-    font-family: Posterama1927W01-Black;
-    color: #1f2e5e;
-    font-size: 20px;
-  }
-  .Foto-Texto-Menu h3 {
-    text-align: center;
-    font-family: Posterama1927W01-Black;
-    color: #1f2e5e;
-    font-size: 20px;
-    padding-bottom: 15px;
-  }
-  .Foto-Texto-Menu ul li {
-    text-align: center;
-    font-family: Posterama1927W01-Black;
-    color: #1f2e5e;
-    font-size: 20px;
-    padding-bottom: 15px;
-  }
-  .Foto-Texto-Reverse-Menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .Foto-Texto-Reverse-Menu h2 {
-    text-align: center;
-    font-family: Posterama1927W01-Black;
-    color: #1f2e5e;
-    font-size: 30px;
-    padding-bottom: 15px;
-  }
-  .Foto-Texto-Reverse-Menu p {
-    text-align: center;
-    font-family: Posterama1927W01-Black;
-    color: #1f2e5e;
-    font-size: 20px;
-  }
-  .Foto-Texto-Reverse-Menu h3 {
-    text-align: center;
-    font-family: Posterama1927W01-Black;
-    color: #1f2e5e;
-    font-size: 20px;
-    padding-bottom: 15px;
-  }
-  .Foto-Texto-Reverse-Menu ul li {
-    text-align: center;
-    font-family: Posterama1927W01-Black;
-    color: #1f2e5e;
-    font-size: 20px;
-    padding-bottom: 15px;
-  }
-  .textoIzqMenu {
-    width: 35%;
-    height: 700px;
-    padding: 40px;
-    margin: 0px 40px 0px 0;
-    line-height: 1.6;
-    background-color: beige;
-  }
-  .textoDerMenu {
-    width: 35%;
-    padding: 40px;
-    height: 700px;
-    margin: 0px 0px 40px 40px;
-    line-height: 1.6;
-    background-color: beige;
-  }
-  .ImagenDerMenu {
-    width: 35%;
-    height: 700px;
-    background-size: cover;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .ImagenIzqMenu {
-    width: 35%;
-    height: 700px;
-    background-size: cover;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  /* MENU */
-  .contenedorMenu {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
-  .contenedorTitulosMenu h2 {
-    background-color: #1f2e5e;
-    font-family: Posterama1927W01-Black;
-    color: #fff;
     font-size: 25px;
-  }
-  .contenedorTitulosMenu p {
-    font-family: Posterama1927W01-Black;
-    color: #1f2e5e;
-    font-size: 20px;
-  }
-  .Foto-Texto-Menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-bottom: 100px;
-    margin-top: 100px;
-    margin-right: 100px;
-    margin-left: 100px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .Foto-Texto-Menu h2 {
-    text-align: center;
-    font-family: Posterama1927W01-Black;
-    color: #1f2e5e;
-    font-size: 30px;
     padding-bottom: 15px;
   }
   .Foto-Texto-Menu p {
@@ -1064,10 +955,10 @@ header,
     padding-bottom: 15px;
   }
   .Foto-Texto-Menu ul li {
-    text-align: center;
+    text-align: justify;
     font-family: Posterama1927W01-Black;
     color: #1f2e5e;
-    font-size: 20px;
+    font-size: 17px;
     padding-bottom: 15px;
   }
   .Foto-Texto-Reverse-Menu {
@@ -1107,10 +998,10 @@ header,
     padding-bottom: 15px;
   }
   .Foto-Texto-Reverse-Menu ul li {
-    text-align: center;
+    text-align: justify;
     font-family: Posterama1927W01-Black;
     color: #1f2e5e;
-    font-size: 20px;
+    font-size: 17px;
     padding-bottom: 15px;
   }
   .textoIzqMenu {
@@ -1233,24 +1124,6 @@ header,
     background-size: cover;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-  }
-  /* MENU */
-  .contenedorMenu {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 70px;
-    display: flexbox;
-  }
-  .contenedorTitulosMenu h2 {
-    background-color: #1f2e5e;
-    font-family: Posterama1927W01-Black;
-    color: #fff;
-    font-size: 25px;
-  }
-  .contenedorTitulosMenu p {
-    font-family: Posterama1927W01-Black;
-    color: #1f2e5e;
-    font-size: 20px;
   }
   /*UBICACION */
   .textos__nosotros, .titulo2 {
@@ -1611,12 +1484,15 @@ header,
     margin-top: 30px;
     margin-right: 30px;
     margin-left: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .Foto-Texto-Menu h2 {
     text-align: center;
     font-family: Posterama1927W01-Black;
     color: #1f2e5e;
-    font-size: 40px;
+    font-size: 30px;
     padding-bottom: 15px;
   }
   .Foto-Texto-Menu p {
@@ -1637,7 +1513,7 @@ header,
     font-family: Posterama1927W01-Black;
     color: #1f2e5e;
     font-size: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
   .Foto-Texto-Reverse-Menu {
     display: -webkit-box;
@@ -1651,12 +1527,15 @@ header,
     margin-top: 30px;
     margin-left: 30px;
     margin-right: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .Foto-Texto-Reverse-Menu h2 {
     text-align: center;
     font-family: Posterama1927W01-Black;
     color: #1f2e5e;
-    font-size: 40px;
+    font-size: 30px;
     padding-bottom: 15px;
   }
   .Foto-Texto-Reverse-Menu p {
@@ -1680,22 +1559,29 @@ header,
     padding-bottom: 15px;
   }
   .textoIzqMenu {
-    margin: 50px 0 0 0;
+    width: 50%;
+    margin: 50px 0 50px 0;
     line-height: 1.6;
     background-color: beige;
   }
   .textoDerMenu {
-    margin: 50px 0 0 0;
+    width: 50%;
+    margin: 50px 0 50px 0;
     line-height: 1.6;
     background-color: beige;
   }
   .ImagenDerMenu {
+    width: 50%;
     height: 500px;
     background-size: cover;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
   }
   .ImagenIzqMenu {
+    width: 50%;
     height: 500px;
     background-size: cover;
     -webkit-box-sizing: border-box;
@@ -2048,7 +1934,8 @@ header,
   .contenedorMenu {
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
+    display: flexbox;
   }
   .contenedorTitulosMenu h2 {
     background-color: #1f2e5e;
@@ -2060,6 +1947,121 @@ header,
     font-family: Posterama1927W01-Black;
     color: #1f2e5e;
     font-size: 20px;
+  }
+  .Foto-Texto-Menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Foto-Texto-Menu h2 {
+    text-align: center;
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  .Foto-Texto-Menu p {
+    text-align: center;
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 20px;
+  }
+  .Foto-Texto-Menu h3 {
+    text-align: center;
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  .Foto-Texto-Menu ul li {
+    text-align: center;
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  .Foto-Texto-Reverse-Menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Foto-Texto-Reverse-Menu h2 {
+    text-align: center;
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  .Foto-Texto-Reverse-Menu p {
+    text-align: center;
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 20px;
+  }
+  .Foto-Texto-Reverse-Menu h3 {
+    text-align: center;
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+  .Foto-Texto-Reverse-Menu ul li {
+    text-align: center;
+    font-family: Posterama1927W01-Black;
+    color: #1f2e5e;
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  .textoIzqMenu {
+    width: 70%;
+    margin: 50px 0 50px 0;
+    line-height: 1.6;
+    background-color: beige;
+  }
+  .textoDerMenu {
+    width: 70%;
+    margin: 50px 0 50px 0;
+    line-height: 1.6;
+    background-color: beige;
+  }
+  .ImagenDerMenu {
+    width: 70%;
+    height: 500px;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+  .ImagenIzqMenu {
+    width: 70%;
+    height: 500px;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   /*UBICACION */
   .textos__nosotros, .titulo2 {
